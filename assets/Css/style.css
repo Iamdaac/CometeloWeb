@@ -20,7 +20,7 @@ width: 100%;
 bottom: 0;
 }
 .Contenedor-busqueda {
-    background-color: #c9c9cb;
+    background-color: #4e5986;
      display: flex;
     align-items: center;  
 
@@ -42,9 +42,7 @@ bottom: 0;
     display: flex;
     
 }
-.lista-rest{
-    background-color:#4e5986;
-}
+
 .contenido-restaurante{
     padding-left: 12px;
 }
