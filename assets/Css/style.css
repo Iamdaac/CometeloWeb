@@ -15,15 +15,14 @@ body{
     min-height: 100vh;
 }
 footer{
-position: absolute;
-width: 100%;
-bottom: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 .Contenedor-busqueda {
     background-color: #c9c9cb;
      display: flex;
     align-items: center;  
-
 }
 .Resultado{
     background-color: white;
@@ -42,22 +41,9 @@ bottom: 0;
     display: flex;
     
 }
-.contenido-restaurante{
-    padding-left: 12px;
-}
-.Contenedor-restaurante{
-    display: flex;
-}
-div#carouselExampleSlidesOnly {
-    padding: 10px;
-}
-.carrusel-principal{
-    width: 1500px;
-}
-.Restaurante-detalles{
-    background-color: #bbb;
-}
-a:link, a:visited{
-    text-decoration: none;
-    color: black;
-}
+
+/* Cambiar el color de las flechas del carusel a negro */
+/* .carousel-control-next,
+.carousel-control-prev{
+    filter: invert(100%);
+} */
