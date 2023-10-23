@@ -26,8 +26,9 @@ bottom: 0;
 
 }
 .Resultado{
-    background-color: aliceblue;
-    border-radius: 6%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 50px;
@@ -40,6 +41,9 @@ bottom: 0;
     border-bottom-width: thin;
     display: flex;
     
+}
+.contenido-restaurante{
+    padding-left: 12px;
 }
 .Contenedor-restaurante{
     display: flex;
