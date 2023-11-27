@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/Css/style.css">
+    <link rel="shortcut icon" href="assets/Img/cometeloLogo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Cómetelo - Plato</title>
+</head>
+
+<body>
+    <div class="bg-image d-flex justify-content-center align-items-center"
+        style="background-image: url('https://images.unsplash.com/photo-1482977036925-e8fcaa643657?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80'); height: 100vh; background-size: cover;">
+        <div class="container-xl p-4 text-white container-fluid rounded-4" style="background-color: #111111;">
+            <form action="" method="post">
+                <p class="lead display-6 text-center">Información del Plato</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mb-4 d-flex justify-content-center">
+                            <img id="selectedImage"
+                                src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" alt="example placeholder"
+                                style="width: 300px;" class="rounded-4" />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="btn btn-primary btn-rounded">
+                                <label class="form-label text-white m-1" for="customFile1">Seleccione una imagen</label>
+                                <input type="file" class="form-control d-none" id="customFile1"
+                                    onchange="displaySelectedImage(event, 'selectedImage')" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <label for="nombrePlato" class="form-label lead">Nombre del Platillo</label>
+                        <input type="text" class="form-control" id="nombrePlato"
+                            placeholder="Harina y salchicha guisada" required>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <label for="precioPlato" class="form-label lead">Precio del Platillo</label>
+                        <input type="text" class="form-control" id="precioPlato" placeholder="29.15"
+                            aria-label="Amount (to the nearest dollar)" required>
+                    </div>
+                </div>
+                <div class="btn-group col-md-12 mt-4">
+                    <button type="submit" class="btn btn-primary active" aria-current="page">Crear</button>
+                    <a href="perfilRestaurante.html" class="btn btn-primary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
