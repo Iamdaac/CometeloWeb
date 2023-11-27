@@ -13,6 +13,14 @@
             <div class="form-group" id="camposAdicionales">
                 <div class="row gr-3 mt-3">
                     <p class="lead text-center fw-bold">Información General</p>
+                    <div class="col-md-6">
+                        <label for="validationDefault03" class="form-label">Correo Electrónico</label>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="hola@gmail.com" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="validationDefault03" class="form-label">Contraseña</label>
+                        <input type="password" minlength="8" class="form-control" id="validationDefault03" placeholder="Mínimo 8 caracteres" required>
+                      </div> 
                     <div class="col-md-4 mt-1">
                         <label for="nombreRestaurante">Nombre del Restaurante:</label>
                         <input type="text" class="form-control" id="nombreRestaurante" name="nombreRestaurante" placeholder="Delicias Maria" required>
@@ -23,7 +31,7 @@
                     </div>
                     <div class="col-md-4  mt-1">
                         <label for="ubicacionRestaurante">Ubicación:</label>
-                        <input type="text" class="form-control" id="nombreRestaurante" name="ubicacionRestaurante" placeholder="Coco del Mar" required>
+                        <input type="text" class="form-control" id="nombreRestaurante" name="ubicacionRestaurante" placeholder="Ingrese su provincia" required>
                     </div>
                     <div class="col-md-6 row gr-3  mt-1">
                         <label for="appt">Horario:</label>
@@ -93,39 +101,21 @@
                         <label for="facilidadesRestaurante">Facilidades</label>
                         <div>
                             <input class="form-check-input" type="checkbox" value="sillaBebe" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">Sillas para bebes</label>
+                            <label class="form-check-label mx-1" for="flexCheckDefault">Sillas para bebes</label>
                             <input class="form-check-input" type="checkbox" value="menuNiño" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">Menú para niños</label>
+                            <label class="form-check-label mx-1" for="flexCheckDefault">Menú para niños</label>
                             <input class="form-check-input" type="checkbox" value="cambiador" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">Cambiador</label>
+                            <label class="form-check-label mx-1" for="flexCheckDefault">Cambiador</label>
                             <input class="form-check-input" type="checkbox" value="facilidadDiscapacitados" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">Facilidad para discapacitados</label>
+                            <label class="form-check-label mx-1" for="flexCheckDefault">Facilidad para discapacitados</label>
                             <input class="form-check-input" type="checkbox" value="estacionamientoBajoTecho" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">Estacionamiento bajo techo</label>
-                        </div>
-                    </div>
-                    <div class="container container-xl row">
-                        <p class="lead text-center fw-bold mt-2 mb-2">Menú</p>
-                        <div class="col-md-4">
-                            <label for="nombrePlato">Nombre del Plato</label>
-                            <input type="text" class="form-control mt-2" id="nombrePlato" name="nombrePlato" placeholder="Arroz con Camaron" required>
-                        </div>
-                        <div class="col-md-2 mt-2">
-                            <label for="precioPlato">Precio</label>
-                            <div class="input-group">
-                                <span class="input-group-text">$</span>
-                                <input type="text" class="form-control" aria-label="Cantidad (al dólar más cercano)" id="precioPlato" placeholder="12.59" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <label for="formFileMultiple" class="form-label">Seleccione una imagen de su comida.</label>
-                            <input class="form-control" type="file" id="formFileMultiple" multiple />
+                            <label class="form-check-label mx-1" for="flexCheckDefault">Estacionamiento bajo techo</label>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="btn-group mt-4 col-md-12">
-                <button type="submit" class="btn btn-primary active" aria-current="page">Enviar</button>
+                <a href="inicioSesion.html" type="submit" class="btn btn-primary active" aria-current="page">Enviar</a>
                 <a href="registroSesion.html" class="btn btn-primary">Regresar</a>
               </div>
            </form>
