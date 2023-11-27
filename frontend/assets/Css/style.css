@@ -1,0 +1,50 @@
+.nav-link{
+    font-size: large;
+}
+.pfo{
+    color: white;
+    font-weight: 250;
+}
+.pfoConsulta{
+    font-size: large;
+}
+body{
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 10em;
+    min-height: 100vh;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.Contenedor-busqueda {
+    background-color: white;
+     display: flex;
+    align-items: center;  
+}
+.Resultado{
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right:50px;
+    width: 1000px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+.Restaurante-busqueda {
+    border-bottom-color: #dee2e6;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    display: flex;
+    
+}
+
+/* Cambiar el color de las flechas del carusel a negro */
+/* .carousel-control-next,
+.carousel-control-prev{
+    filter: invert(100%);
+} */
