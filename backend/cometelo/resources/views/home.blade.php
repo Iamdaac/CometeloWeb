@@ -21,7 +21,7 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item p-3 mx-2">
-                        <a class="nav-link" aria-current="page" href="Busqueda.html">Restaurante</a>
+                        <a class="nav-link" aria-current="page" href="/restaurantes">Restaurante</a>
                     </li>
                     <a class="navbar-brand d-none d-xl-block d-xxl-none" href="index.html">
                       <img src="{{ asset('img/cometeloLogo.png') }}" alt="Cómetelo Logo" class="img-fluid mx-4" style="width: 19vh;">

@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\RestaurantesController;
+
 
 
 /*
@@ -20,6 +22,9 @@ use App\Http\Controllers\AuthController;
 Route::get('/', function () {
     return Response::view('home');
 })->middleware('auth');
+
+Route::get('/restaurantes', [RestaurantesController::class, 'index'])->middleware('auth');
+
 
 // Auth
 Route::get('/register', function (){
