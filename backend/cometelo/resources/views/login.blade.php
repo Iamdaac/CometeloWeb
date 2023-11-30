@@ -11,7 +11,7 @@
 <body class="iniciaSesion">
     <main>
         <div class="bg-image d-flex justify-content-center align-items-center" style="background-image: url('https://images.unsplash.com/photo-1482977036925-e8fcaa643657?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80'); height: 100vh">
-            <form method="post">
+            <form method="post" >
                 @csrf
                 <div class="row d-inline-flex justify-content-center align-items-center">
                     <div class="container container-xl p-3 m-0 col-md-5 text-white rounded-4" style="background-color: #111111;">
@@ -27,7 +27,7 @@
                             <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Introduzca su contraseña">
                         </div>
                         <div class="mb-3 lead text-center">
-                            <p>¿No tienes cuenta?<a href="/register" class="text-white">Registrate</a></p>
+                            <p>¿No tienes cuenta?<a href="/register" class="text-white"> Registrate</a></p>
                         </div>
                         <button type="submit" class="btn btn-primary" style="width: 100%;" >Iniciar Sesión</button>
                         </div>
