@@ -19,12 +19,12 @@
           <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item p-3 mx-2">
-                    <a class="nav-link active" aria-current="page" href="/home">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                 </li>
                 <li class="nav-item p-3 mx-2">
                     <a class="nav-link " aria-current="page" href="/restaurantes">Restaurante</a>
                 </li>
-                <a class="navbar-brand d-none d-xl-block d-xxl-none" href="/home">
+                <a class="navbar-brand d-none d-xl-block d-xxl-none" href="/">
                   <img src="assets/Img/cometeloLogoPlato.png" alt="Cómetelo Logo" class="img-fluid mx-4" style="width: 19vh;">
                 </a> 
                 <li class="nav-item p-3 mx-2">
@@ -68,7 +68,7 @@
           <div class="row text-center d-flex justify-content-center pt-4">
             <div class="col-md-2">
               <h6 class="lead text-light">
-                <a href="/home" class="text-white">Inicio</a>
+                <a href="/" class="text-white">Inicio</a>
               </h6>
             </div>
             <div class="col-md-2">
