@@ -7,6 +7,9 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\RestaurantesController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\BController;
+use App\Http\Controllers\RestauranteInfoController;
+use App\Http\Controllers\ReservaController;
+
 
 
 /*
@@ -44,6 +47,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::post('/login', [AuthController::class, 'login'])->name('login.submit'); 
 
+// Perfil
 Route::get('/perfil', [PerfilController::class, 'mostrarPerfil'])->middleware('auth');
 Route::post('/perfil/actualizar', [PerfilController::class, 'actualizarPerfil'])->middleware('auth')->name('perfil.actualizar');
 
@@ -52,6 +56,9 @@ Route::post('/perfil/actualizar', [PerfilController::class, 'actualizarPerfil'])
 
 Route::get('/buscar', [BController::class, 'buscar']);
 Route::get('/buscar_avanzado', [BController::class, 'buscarAvanzado'])->name('buscar_avanzado');
+Route::get('/restaurante/{id}', [RestauranteInfoController::class, 'restauranteInfo'])->middleware('auth');;
 
-
+// Reservas
+Route::get('/reservas', [RestaurantesController::class, 'listadoRestaurantes']);
+Route::post('/reservas', [ReservaController::class, 'crearReserva']);
 

@@ -72,6 +72,20 @@
                 <div class="col-md-6">
                     <div class="bg-white shadow-lg p-3 mb-5 bg-body rounded">
                         <p class="display-6">Reservas</p>
+                        @foreach ($reservas as $reserva)
+                            <div class="reservasInfo container-xl shadow p-3 mb-5 bg-body rounded">
+                                <p class="lead m-0 fw-bold">{{ $reserva->fecha . " " . $reserva->hora }}</h3>
+                                <p class="lead m-0">{{ $reserva->restaurante->nombre }}</h4>
+                                <p class="lead secondary" style="font-size: 16px;">{{ $reserva->cantidad . " comensales" }}</p>
+                                <button type="button" class="btn btn-outline-primary">Ver más</button>
+                            </div>
+                        @endforeach
+                        <div class="reservasInfo container-xl shadow p-3 mb-5 bg-body rounded">
+                            <p class="lead m-0 fw-bold">Fecha y Hora de la reserva</h3>
+                            <p class="lead m-0">Nombre del Restaurante</h4>
+                            <p class="lead secondary" style="font-size: 16px;">Descripción de la reserva, número de comensales, Información de contacto, etc.</p>
+                            <button type="button" class="btn btn-outline-primary">Ver más</button>
+                        </div>
                         <!-- Información de reservas -->
                         <!-- ... (código de reservas) ... -->
                     </div>

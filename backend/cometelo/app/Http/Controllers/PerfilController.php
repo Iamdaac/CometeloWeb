@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Reservacion;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -13,7 +13,10 @@ class PerfilController extends Controller
         if (Auth::check()) {
             // Obtiene los detalles del usuario autenticado
             $usuario = Auth::user();
-            return view('perfil', compact('usuario'));
+            $reservas = Reservacion::with('restaurante')
+                                    ->where('id_cliente', $usuario->id)
+                                    ->get();
+            return view('perfil', compact('usuario', 'reservas'));
         } else {
             // Si el usuario no está autenticado, redirige al login o a otra página
             return redirect('/login')->with('error', 'Debes iniciar sesión para ver tu perfil');

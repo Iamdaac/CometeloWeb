@@ -29,7 +29,7 @@
                 </a> 
                 <li class="nav-item p-3 mx-2">
                   <!--agregar ruta-->
-                    <a class="nav-link " aria-current="page" href="">Reserva</a>
+                    <a class="nav-link " aria-current="page" href="/reservas">Reserva</a>
                 </li> 
             </ul>
           </div>
@@ -79,7 +79,7 @@
             <div class="col-md-2">
               <h6 class="lead">
                 <!--agregar ruta-->
-                <a href="" class="text-white">Reserva</a>
+                <a href="/reservas" class="text-white">Reserva</a>
               </h6>
             </div>
           </div>

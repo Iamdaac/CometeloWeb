@@ -13,4 +13,10 @@ class RestaurantesController extends Controller
         return view('restaurantes', ['restaurantes' => $restaurantes]);
     }
 
+    public function listadoRestaurantes()
+    {
+        $restaurantes = Restaurante::all();
+        return view('reservas', compact('restaurantes'));
+    }
+
 }

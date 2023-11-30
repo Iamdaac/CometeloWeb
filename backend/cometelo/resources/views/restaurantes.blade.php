@@ -29,7 +29,7 @@
                 </a> 
                 <li class="nav-item p-3 mx-2">
                   <!--agregar ruta-->
-                    <a class="nav-link " aria-current="page" href="">Reserva</a>
+                    <a class="nav-link " aria-current="page" href="/reservas">Reserva</a>
                 </li> 
             </ul>
           </div>
@@ -83,7 +83,7 @@
                                 <p class="lead display-6">{{ $restaurante->nombre }}</p>
                                 <p class="lead">{{ $restaurante->direccion }}</p>
                                 <!-- Enlace para ver más detalles del restaurante -->
-                                <p><a href="#" class="btn btn-primary text-white lead">Ver Más</a></p>
+                                <p><a href="{{'/restaurante/'. $restaurante->id }}" class="btn btn-primary text-white lead">Ver Más</a></p>
                             </div>
                         </div>
                     @endforeach
