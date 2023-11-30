@@ -43,7 +43,7 @@
                           </div>
                           <div class="col-md-12">
                             <div class="mb-3 lead text-center">
-                                <p>¿Ya tienes cuenta?<a href="inicioSesion.html" class="text-white"> Inicia Sesión</a></p>
+                                <p>¿Ya tienes cuenta?<a href="/login" class="text-white"> Inicia Sesión</a></p>
                             </div>
                             </div>
                           <div class="col-12">

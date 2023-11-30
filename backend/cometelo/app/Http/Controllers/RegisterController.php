@@ -14,7 +14,7 @@ class RegisterController extends Controller
             'name' => $request->input('nombre') . " " . $request->input('apellido'),
             'email' => $request->input('email'),
             'password' => Hash::make($request->input('password')),
-            'role' => USUARIO, 
+            
         ]);
 
         // Lógica para iniciar sesión automáticamente después del registro si lo deseas

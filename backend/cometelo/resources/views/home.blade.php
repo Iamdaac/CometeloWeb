@@ -6,56 +6,56 @@
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="shortcut icon" href="{{ asset('img/cometeloLogo.png') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Cómetelo - Home</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-underline text-center align-items-center shadow-lg bg-body">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item p-3 mx-2">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item p-3 mx-2">
-                        <a class="nav-link" aria-current="page" href="/restaurantes">Restaurante</a>
-                    </li>
-                    <a class="navbar-brand d-none d-xl-block d-xxl-none" href="index.html">
-                      <img src="{{ asset('img/cometeloLogo.png') }}" alt="Cómetelo Logo" class="img-fluid mx-4" style="width: 19vh;">
-                    </a> 
-                    <li class="nav-item p-3 mx-2">
-                        <a class="nav-link" aria-current="page" href="formularioReserva.html">Reserva</a>
-                    </li> 
-                </ul>
-              </div>
-              <div> 
-                <!-- <a href="#">
-                    <i class="bi bi-search text-dark p-1" style="font-size: 40px; width: 32px; height: 32px;"></i>
-                  </a>   -->
-                  <a href="perfil.html">
-                    <i class="bi bi-person-circle text-dark p-3" style="font-size: 40px; width: 32px; height: 32px;"></i>
-                  </a>     
-              </div>              
-            </div>
-          </nav>
+<header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav-underline text-center align-items-center shadow-lg bg-body">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item p-3 mx-2">
+                    <a class="nav-link active" aria-current="page" href="/home">Inicio</a>
+                </li>
+                <li class="nav-item p-3 mx-2">
+                    <a class="nav-link " aria-current="page" href="/restaurantes">Restaurante</a>
+                </li>
+                <a class="navbar-brand d-none d-xl-block d-xxl-none" href="/home">
+                  <img src="assets/Img/cometeloLogoPlato.png" alt="Cómetelo Logo" class="img-fluid mx-4" style="width: 19vh;">
+                </a> 
+                <li class="nav-item p-3 mx-2">
+                  <!--agregar ruta-->
+                    <a class="nav-link " aria-current="page" href="">Reserva</a>
+                </li> 
+            </ul>
+          </div>
+          <div> 
+              <a href="/perfil">
+                <i class="bi bi-person-circle text-dark p-3" style="font-size: 40px; width: 32px; height: 32px;"></i>
+              </a>     
+          </div>    
+        </div>
+      </nav>
     </header>
-
+                
     <main>
         <section>
             <div class="bg-image d-flex justify-content-center align-items-center" style="background-image: url('https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1335&q=80'); height: 100vh">
                 <div class="container container-lg bg-dark opacity-75 rounded-4 p-5 text-center">
                     <p class="pfo display-3 opacity-100">
-                        El placer de la comida al alcance de tu pantalla.
+                        El placer de la comida al alcance de tu pantalla
                     </p>
-                    <form action="" class="mt-4">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control form-control-lg" placeholder="Encuentra lo que buscas">
-                            <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i>Buscar</button>
-                        </div>
-                    </form>
+                    <form action="/buscar" method="GET" class="mt-4">
+                      <div class="input-group mb-3">
+                          <input type="text" class="form-control form-control-lg" placeholder="Encuentra lo que buscas" name="termino_busqueda">
+                          <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i>Buscar</button>
+                      </div>
+                  </form>
+
                     <p class="pfoConsulta text-white">¡Consulta Nuestras Sedes!</p>
                 </div>
             </div>
@@ -68,17 +68,18 @@
           <div class="row text-center d-flex justify-content-center pt-4">
             <div class="col-md-2">
               <h6 class="lead text-light">
-                <a href="index.html" class="text-white">Inicio</a>
+                <a href="/home" class="text-white">Inicio</a>
               </h6>
             </div>
             <div class="col-md-2">
               <h6 class="lead">
-                <a href="Busqueda.html" class="text-white">Restaurante</a>
+                <a href="/restaurantes" class="text-white">Restaurante</a>
               </h6>
             </div>
             <div class="col-md-2">
               <h6 class="lead">
-                <a href="formularioReserva.html" class="text-white">Reserva</a>
+                <!--agregar ruta-->
+                <a href="" class="text-white">Reserva</a>
               </h6>
             </div>
           </div>

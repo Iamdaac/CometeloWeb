@@ -14,11 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('restaurantefacilidad', function (Blueprint $table) {
-            $table->id();
             $table->unsignedBigInteger('restaurante_id');
             $table->unsignedBigInteger('facilidad_id');
             $table->foreign('restaurante_id')->references('id')->on('restaurante');
             $table->foreign('facilidad_id')->references('id')->on('facilidad');
+            $table->primary(['restaurante_id', 'facilidad_id']);
         });
     }
 

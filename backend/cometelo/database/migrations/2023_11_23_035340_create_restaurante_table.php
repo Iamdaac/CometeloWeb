@@ -24,6 +24,9 @@ return new class extends Migration
             $table->string('email');
             $table->string('website');
             $table->string('categoria_costo');
+            $table->string('tipo_restaurante');
+            /*CAMBIO */
+            $table->string('logo');
             $table->foreign('provincia')->references('id')->on('provincia');
         });
     }
