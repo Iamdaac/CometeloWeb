@@ -43,6 +43,11 @@ footer{
     
 }
 
+.iniciaSesion{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 /* Cambiar el color de las flechas del carusel a negro */
 /* .carousel-control-next,
 .carousel-control-prev{
