@@ -118,5 +118,30 @@
             $('#datepicker').datepicker();
         });
     </script>
+    <script>
+    // Espera a que el documento esté listo
+    $(document).ready(function(){
+        // Captura el formulario
+        $('form').submit(function(event){
+            // Evita el envío del formulario predeterminado
+            event.preventDefault();
+
+            // Realiza la solicitud AJAX
+            $.ajax({
+                url: '/reservas', // Reemplaza esto con la ruta adecuada
+                type: 'POST',
+                data: $(this).serialize(), // Serializa los datos del formulario
+                success: function(response){
+                    // Si la respuesta es exitosa, muestra el mensaje de alerta
+                    alert(response.message);
+                },
+                error: function(error){
+                    // Maneja los errores si la solicitud falla
+                    alert('Error al crear la reserva');
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
