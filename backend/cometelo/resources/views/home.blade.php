@@ -11,36 +11,39 @@
 </head>
 <body>
 <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light nav-underline text-center align-items-center shadow-lg bg-body">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item p-3 mx-2">
-                    <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                </li>
-                <li class="nav-item p-3 mx-2">
-                    <a class="nav-link " aria-current="page" href="/restaurantes">Restaurante</a>
-                </li>
-                <a class="navbar-brand d-none d-xl-block d-xxl-none" href="/">
-                  <img src="assets/Img/cometeloLogoPlato.png" alt="Cómetelo Logo" class="img-fluid mx-4" style="width: 19vh;">
-                </a> 
-                <li class="nav-item p-3 mx-2">
-                  <!--agregar ruta-->
-                    <a class="nav-link " aria-current="page" href="/reservas">Reserva</a>
-                </li> 
-            </ul>
-          </div>
-          <div> 
-              <a href="/perfil">
-                <i class="bi bi-person-circle text-dark p-3" style="font-size: 40px; width: 32px; height: 32px;"></i>
-              </a>     
-          </div>    
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-underline text-center align-items-center shadow-lg bg-body">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item p-3 mx-2">
+                        <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item p-3 mx-2">
+                        <a class="nav-link" aria-current="page" href="/restaurantes">Restaurante</a>
+                    </li>
+                    <a class="navbar-brand d-none d-xl-block d-xxl-none" href="/">
+                      <img src="{{ asset('img/cometeloLogoPlato.png') }}" alt="Cómetelo Logo" class="img-fluid mx-4" style="width: 19vh;">
+                    </a> 
+                    <li class="nav-item p-3 mx-2">
+                        <a class="nav-link" aria-current="page" href="/reservas">Reserva</a>
+                    </li> 
+                </ul>
+              </div>
+              <div> 
+                <!-- <a href="/restaurantes">
+                    <i class="bi bi-search text-dark p-1" style="font-size: 40px; width: 32px; height: 32px;"></i>
+                  </a>   -->
+                  <a href="/perfil">
+                    <i class="bi bi-person-circle text-dark p-3" style="font-size: 40px; width: 32px; height: 32px;"></i>
+                  </a>     
+              </div>    
+            </div>
+          </nav>
     </header>
+
                 
     <main>
         <section>
@@ -78,7 +81,6 @@
             </div>
             <div class="col-md-2">
               <h6 class="lead">
-                <!--agregar ruta-->
                 <a href="/reservas" class="text-white">Reserva</a>
               </h6>
             </div>

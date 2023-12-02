@@ -53,27 +53,7 @@
 
     <main>
        <section>
-            {{-- <div class="row justify-content-center p-4 m-4">
-                <div class="col-md-6">
-                    <div class="container container-xxl container-fluid">
-                        <div class="mb-6">
-                            <label for="exampleInputEmail1" class="form-label lead">Nombre Completo</label>
-                            <input type="text" class="form-control" id="validationDefault01" placeholder="Mark">
-                        </div>
-                        <div class="mb-6">
-                            <label for="exampleInputEmail1" class="form-label lead">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="hola@gmail.com">
-                        </div>
-                        <div class="md-6 mb-4">
-                            <label for="validationDefault04" class="form-label lead">Número Telefónico</label>
-                            <input type="text" class="form-control" id="validationDefault04" placeholder="(+000) 0000-0000">
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%;" >Completar</button>
-                        </div>
-                    </div>
-                </div> --}}
-                <div class="container container-lg col-md-4 shadow-lg m-2 p-5 row">
+                <div class="container container-lg col-md-8 shadow-lg m-2 p-5 row rounded-2 mx-auto m-5 ">
                     <form method="post">
                         @csrf
                         <div class="md-6 mb-3">

@@ -77,7 +77,7 @@
                     @foreach ($restaurantes as $restaurante)
                         <div class="Restaurante-busqueda">
                             <!-- Agrega imagen del restaurante -->
-                            <img src="{{ asset('img/LogosRestaurante/' . $restaurante->logo) }}" alt="Logo del restaurante" class="img-fluid w-25">
+                            <img src="{{ asset('img/LogosRestaurante/' . $restaurante->logo) }}" alt="Logo del restaurante" class="img-fluid w-25 mx-2">
                             <div class="contenido-restaurante">
                                 <!-- Muestra el nombre y dirección del restaurante -->
                                 <p class="lead display-6">{{ $restaurante->nombre }}</p>
@@ -112,8 +112,7 @@
             </div>
             <div class="col-md-2">
               <h6 class="lead">
-                <!--agregar ruta-->
-                <a href="" class="text-white">Reserva</a>
+                <a href="/reservas" class="text-white">Reserva</a>
               </h6>
             </div>
           </div>

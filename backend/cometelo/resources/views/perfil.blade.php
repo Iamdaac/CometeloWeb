@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/Css/style.css">
-    <link rel="shortcut icon" href="assets/Img/cometeloLogo.png"/>
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="shortcut icon" href="{{ asset('img/cometeloLogo.png') }}" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Cómetelo - Perfil</title>
 </head>
@@ -27,29 +29,28 @@
                         <a class="nav-link" aria-current="page" href="/restaurantes">Restaurante</a>
                     </li>
                     <a class="navbar-brand d-none d-xl-block d-xxl-none" href="/">
-                      <img src="{{ asset('img/cometeloLogo.png') }}" alt="Cómetelo Logo" class="img-fluid mx-4" style="width: 19vh;">
+                      <img src="{{ asset('img/cometeloLogoPlato.png') }}" alt="Cómetelo Logo" class="img-fluid mx-4" style="width: 19vh;">
                     </a> 
                     <li class="nav-item p-3 mx-2">
-
-                    <!--agregar ruta-->
-                        <a class="nav-link" aria-current="page" href="">Reserva</a>
+                        <a class="nav-link" aria-current="page" href="/reservas">Reserva</a>
                     </li> 
                 </ul>
               </div>
               <div> 
-                <!-- <a href="#">
+                <a href="/restaurantes">
                     <i class="bi bi-search text-dark p-1" style="font-size: 40px; width: 32px; height: 32px;"></i>
-                  </a>   -->
+                  </a>  
                   <a href="/perfil">
                     <i class="bi bi-person-circle text-dark p-3" style="font-size: 40px; width: 32px; height: 32px;"></i>
-                  </a>   
-              </div>              
+                  </a>     
+              </div>    
             </div>
           </nav>
     </header>
+
     <main>
     <section>
-    <div class="container">
+    <div class="container mt-4">
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="bg-white shadow-lg p-3 mb-5 bg-body rounded">
@@ -80,12 +81,6 @@
                                 <button type="button" class="btn btn-outline-primary">Ver más</button>
                             </div>
                         @endforeach
-                        <div class="reservasInfo container-xl shadow p-3 mb-5 bg-body rounded">
-                            <p class="lead m-0 fw-bold">Fecha y Hora de la reserva</h3>
-                            <p class="lead m-0">Nombre del Restaurante</h4>
-                            <p class="lead secondary" style="font-size: 16px;">Descripción de la reserva, número de comensales, Información de contacto, etc.</p>
-                            <button type="button" class="btn btn-outline-primary">Ver más</button>
-                        </div>
                         <!-- Información de reservas -->
                         <!-- ... (código de reservas) ... -->
                     </div>
